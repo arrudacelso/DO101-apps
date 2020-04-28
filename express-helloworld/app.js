@@ -2,7 +2,11 @@ var express = require('express');
 app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World!\n');
+
+  response = 'This is version 2 of the app.' + '\n'
+  
+  //res.send('Hello World!\n');
+  res.send(response);
 });
 
 app.get('/mars', function (req, res) {
